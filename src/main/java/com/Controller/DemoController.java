@@ -2,20 +2,19 @@ package com.Controller;
 
 
 
-import com.Service.demoService;
+import com.Service.DemoService;
 import com.constant.AppCode;
 import com.constant.ServiceCode;
 import com.entity.AppJson;
-import com.entity.PageBean;
 import com.entity.pagebean.UserPageBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api")
-public class demo {
+public class DemoController {
     @Autowired
-    private demoService service;
+    private DemoService service;
 
     @RequestMapping(value = "/user", method = RequestMethod.POST)
     public AppJson user(UserPageBean pageBean){

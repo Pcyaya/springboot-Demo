@@ -43,6 +43,12 @@
             <version>RELEASE</version>
             <scope>compile</scope>
         </dependency>
+        <!-- spring boot 配置 引入 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <optional>true</optional>
+        </dependency>
         <!-- mybatis 包引入 -->
         <dependency>
             <groupId>org.mybatis.spring.boot</groupId>
@@ -61,10 +67,10 @@
             <scope>runtime</scope>
         </dependency>
         <!--添加JDBC依赖-->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-jdbc</artifactId>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>org.springframework.boot</groupId>-->
+            <!--<artifactId>spring-boot-starter-jdbc</artifactId>-->
+        <!--</dependency>-->
     </dependencies>
 
     <build>

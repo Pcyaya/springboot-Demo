@@ -1,6 +1,6 @@
 package com.entity.page;
 
-public class userPage {
+public class UserPage {
     public String name;
     public String age;
     public String study;
