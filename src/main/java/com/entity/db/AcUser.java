@@ -3,105 +3,107 @@ package com.entity.db;
 import java.util.Date;
 
 public class AcUser {
-    private String	id;	 //uuid
-    private String  no;  //工号
-    private String	name;	 //名称
-    private String	phone;	 //联系方式
-    private String	pwd;	 //密码
-    private String  position;//职位
-    private String	level;	 //级别
-    private String	email;	 //邮箱
-    private String	sex;	 //0.男 1.女
-    private String	descript;	 //描述
-    private String	del;	 //
-    private Date create_date;	 //
-    private Date	update_date;	 //
+    private 	String	au_id;	 //uuid
+    private 	String	au_no;	 //工号
+    private 	String	au_name;	 //名称
+    private 	String	au_phone;	 //联系方式
+    private 	String	au_pwd;	 //密码
+    private 	String	au_position;	 //职位
+    private 	int	au_level;	 //级别
+    private 	String	au_email;	 //邮箱
+    private 	String	au_sex;	 //0.男 1.女
+    private 	String	au_descript;	 //描述
+    private 	int	del;	 //
+    private 	Date	create_date;	 //
+    private 	Date	update_date;	 //
 
-    public String getId() {
-        return id;
+    public String getAu_sex() {
+        return au_sex;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setAu_sex(String au_sex) {
+        this.au_sex = au_sex;
     }
 
-    public String getNo() {
-        return no;
+    public String getAu_id() {
+        return au_id;
     }
 
-    public void setNo(String no) {
-        this.no = no;
+    public void setAu_id(String au_id) {
+        this.au_id = au_id;
     }
 
-    public String getName() {
-        return name;
+    public String getAu_no() {
+        return au_no;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setAu_no(String au_no) {
+        this.au_no = au_no;
     }
 
-    public String getPhone() {
-        return phone;
+    public String getAu_name() {
+        return au_name;
     }
 
-    public void setPhone(String phone) {
-        this.phone = phone;
+    public void setAu_name(String au_name) {
+        this.au_name = au_name;
     }
 
-    public String getPwd() {
-        return pwd;
+    public String getAu_phone() {
+        return au_phone;
     }
 
-    public void setPwd(String pwd) {
-        this.pwd = pwd;
+    public void setAu_phone(String au_phone) {
+        this.au_phone = au_phone;
     }
 
-    public String getPosition() {
-        return position;
+    public String getAu_pwd() {
+        return au_pwd;
     }
 
-    public void setPosition(String position) {
-        this.position = position;
+    public void setAu_pwd(String au_pwd) {
+        this.au_pwd = au_pwd;
     }
 
-    public String getLevel() {
-        return level;
+    public String getAu_position() {
+        return au_position;
     }
 
-    public void setLevel(String level) {
-        this.level = level;
+    public void setAu_position(String au_position) {
+        this.au_position = au_position;
     }
 
-    public String getEmail() {
-        return email;
+    public int getAu_level() {
+        return au_level;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setAu_level(int au_level) {
+        this.au_level = au_level;
     }
 
-    public String getSex() {
-        return sex;
+    public String getAu_email() {
+        return au_email;
     }
 
-    public void setSex(String sex) {
-        this.sex = sex;
+    public void setAu_email(String au_email) {
+        this.au_email = au_email;
     }
 
-    public String getDescript() {
-        return descript;
+
+
+    public String getAu_descript() {
+        return au_descript;
     }
 
-    public void setDescript(String descript) {
-        this.descript = descript;
+    public void setAu_descript(String au_descript) {
+        this.au_descript = au_descript;
     }
 
-    public String getDel() {
+    public int getDel() {
         return del;
     }
 
-    public void setDel(String del) {
+    public void setDel(int del) {
         this.del = del;
     }
 

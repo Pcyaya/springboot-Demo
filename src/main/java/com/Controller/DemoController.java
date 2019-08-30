@@ -6,6 +6,7 @@ import com.Service.DemoService;
 import com.constant.AppCode;
 import com.constant.ServiceCode;
 import com.entity.AppJson;
+import com.entity.form.UserForm;
 import com.entity.pagebean.UserPageBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -16,10 +17,10 @@ public class DemoController {
     @Autowired
     private DemoService service;
 
-    @RequestMapping(value = "/user", method = RequestMethod.POST)
-    public AppJson user(UserPageBean pageBean){
+    @RequestMapping(value = "/userlist", method = RequestMethod.POST)
+    public AppJson userlist(UserForm pageBean){
         AppJson json = new AppJson();
-        String appcode = service.user(pageBean, json);
+        String appcode = service.userlist(pageBean, json);
         if(AppCode.codeMap.containsKey(appcode)) {
             //原码返回
             json.setSuccess(appcode);

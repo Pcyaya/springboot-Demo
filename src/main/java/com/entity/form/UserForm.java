@@ -1,19 +1,13 @@
-package com.entity.pagebean;
+package com.entity.form;
 
 import com.entity.PageBean;
 
-public class UserPageBean extends PageBean {
-    private String name;
-    private String phone;
-    private String email;
+import java.util.Date;
 
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
+public class UserForm extends PageBean {
+    public String name;
+    public String phone;
+    public String email;
 
     public String getName() {
         return name;
@@ -29,5 +23,13 @@ public class UserPageBean extends PageBean {
 
     public void setPhone(String phone) {
         this.phone = phone;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 }
